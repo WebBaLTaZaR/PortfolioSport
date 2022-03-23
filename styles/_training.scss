@@ -1,0 +1,136 @@
+.training {
+  padding: 0 10px 80px;
+}
+.trainingTop {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.trainingTitle {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 32px;
+  color: #2b3541;
+}
+.trainingData {
+  position: relative;
+  top: 7px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  color: #2b3541;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+.trainingCardsWrap {
+  width: 340px;
+  display: grid;
+  gap: 20px;
+}
+.trainingCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #2b3541;
+  transition-duration: 0.5s;
+}
+.trainingCardDate {
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 150%;
+  color: #010101;
+  opacity: 0.7;
+  padding: 20px 20px 10px 205px;
+  align-items: end;
+}
+.TrainingCardTitleWrap {
+  padding: 0 20px 20px 30px;
+}
+.TrainingCardImg {
+  position: relative;
+  top: -10px;
+  left: -13px;
+}
+.trainingCardTitle {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  color: #2b3541;
+}
+
+.trainingCardText {
+  font-size: 12px;
+  line-height: 150%;
+  color: #2b3541;
+  display: none;
+  margin-left: 44px;
+  width: 233px;
+}
+.trainingCard:hover {
+  border: none;
+  background: linear-gradient(
+    180deg,
+    #fbf138 0%,
+    rgba(253, 249, 182, 0.45) 100%
+  );
+  opacity: 0.7;
+  box-shadow: 0px 13px 30px rgba(186, 180, 69, 0.1);
+  height: 206px;
+ 
+  .trainingCardText {
+    display: block;
+  }
+}
+
+
+
+@media (min-width: 768px) {
+  .trainingTop{
+    margin-bottom: 40px;
+  }
+  .trainingCardsWrap {
+    grid-template-columns: 1fr 1fr;
+  }
+  .trainingCard {
+    width: 364px;
+    height: 224px;
+  }
+  .TrainingCardImg{
+    position:static;
+    display: block;
+    width: 16%;
+    margin-bottom: 36px;
+  }
+  .trainingCardText{
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  .trainingCard:hover {
+    height: 333px;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .trainingTitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+  }
+  .trainingData {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 125%;
+  }
+  .trainingCardsWrap {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .trainingCard {
+    width: 360px;
+    height: 250px;
+  }
+  .trainingCard:hover {
+    height: 433px;
+  }
+}

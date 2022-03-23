@@ -1,0 +1,102 @@
+.subscribe {
+  background: #f3f3f3;
+  padding: 57px 10px 40px;
+  margin-bottom: 95px;
+}
+
+.subscribeTitle {
+  margin: 0 auto;
+
+  width: 201px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  text-align: center;
+  color: #2b3541;
+  position: relative;
+  z-index: 2;
+}
+.subscribeTitle::before {
+  content: url(../img/subscribeRound.svg);
+  position: absolute;
+  top: -25px;
+  left: -36px;
+  z-index: -1;
+  display: block;
+}
+.subscribeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscribeEmail {
+  height: 65px;
+  display: block;
+  width: 340px;
+  padding: 19px 25px;
+  margin: 51px 0 14px 0;
+  
+}
+.subscribeEmail:placeholder-shown {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(43, 52, 64, 0.301);
+  
+}
+.subscribeCheckboxWrap {
+  display: flex;
+  text-align: center;
+}
+.subscribeCheckbox {
+  width: 18px;
+  height: 18px;
+  background: #2b3541;
+}
+.subscribePersonData {
+  margin-left: 6px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 150%;
+  color: #2b3541;
+  opacity: 0.5;
+}
+.subscribePersonData span {
+  border-bottom: 1px solid rgba(43, 53, 65, 0.5);
+}
+.subscribeButton {
+  height: 65px;
+  margin-top: 43px;
+  padding-bottom: 18px;
+  width: 340px;
+}
+
+@media (min-width: 1024px) {
+  .subscribeTitle {
+    width: 587px;
+    font-size: 40px;
+    line-height: 49px;
+  }
+  .subscribeTitle::before {
+    top: -34px;
+    left: -56px;
+    content: url(../img/subscribeRoundXL.svg);
+  }
+  .subscribeForm {
+    margin-top: 40px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+  .subscribeEmail {
+    margin-top: 0;
+    margin-right: 20px;
+    width: 372px;
+  }
+  .subscribeButton {
+    margin-top: 0;
+    width: 225px;
+    font-style: 16px;
+  }
+  
+}

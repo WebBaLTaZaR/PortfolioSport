@@ -1,0 +1,152 @@
+.upcomingEvents {
+  padding: 0 10px 80px;
+}
+.upcomingEventsTitle {
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 125%;
+  color: #2b3541;
+  margin-bottom: 20px;
+}
+.upcomingEventsCards {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  gap: 10px;
+}
+.EventsCard {
+  display: grid;
+  grid-template-rows: 1fr 9fr 1fr;
+  width: 165px;
+  height: 309px;
+}
+.EventsCard__1 {
+  background: url(../img/Card1Mobile.png);
+}
+.EventsCard__2 {
+  background: url(../img/Card2Mobile.png);
+}
+.EventsCard__3 {
+  grid-column: 1/-1;
+  background: url(../img/Card3Mobile.png);
+  width: 340px;
+  height: 336px;
+}
+.EvenCardsDate {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+  color: #2b3541;
+  opacity: 0.6;
+  padding: 20px 0 16px 20px;
+}
+.EventsCardTitle {
+  padding-left: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  color: #2b3541;
+  width: 133px;
+}
+.cardBottom {
+  display: flex;
+  justify-content: space-between;
+}
+.CardsButton {
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+  color: #2b3541;
+  background: #fbf138;
+  padding: 6px 15px;
+}
+.cardPlus {
+  width: 30px;
+  height: 30px;
+  background: #2b3541;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardPlusItem {
+  width: 15px;
+  height: 15px;
+}
+@media (min-width: 768px) {
+  .upcomingEventsCards {
+    gap: 20px;
+  }
+  .EventsCard {
+    width: 364px;
+    height: 309px;
+  }
+  .EventsCard__1 {
+    background: url(/img/Card1Tablet.png);
+  }
+  .EventsCard__2 {
+    background: url(/img/Card2Tablet.png);
+  }
+  .EventsCard__3 {
+    width: 748px;
+    height: 336px;
+    background: url(/img/Card3Tablet.png);
+    background-repeat: no-repeat;
+  }
+  .EvenCardsDate,
+  .EventsCardTitle {
+    padding-left: 25px;
+  }
+  .EventsCardTitle {
+    width: 137px;
+  }
+}
+@media (min-width: 1024px) {
+  .upcomingEvents {
+    padding: 0 0 162px;
+    grid-template-rows: 1fr 12fr 1fr;
+  }
+  .upcomingEventsTitle {
+    margin-bottom: 40px;
+    font-size: 40px;
+  }
+  .upcomingEventsCards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .EventsCard__1 {
+    width: 367px;
+    height: 600px;
+    background: url(/img/Card1Desktop.png);
+  }
+  .EventsCard__2 {
+    width: 367px;
+    height: 600px;
+    background: url(/img/Card2Desktop.png);
+  }
+  .EventsCard__3 {
+    width: 367px;
+    height: 600px;
+    background: url(/img/Card3Desktop.png);
+    background-repeat: no-repeat;
+    grid-column: auto;
+  }
+  .EvenCardsDate {
+    font-size: 18px;
+    line-height: 150%;
+    padding: 30px 0 20px 30px;
+  }
+  .EventsCardTitle {
+    font-size: 28px;
+    line-height: 125%;
+    padding-left: 30px;
+    width: 234px;
+  }
+  .cardBottom {
+    justify-content: end;
+  }
+  .CardsButton {
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+  .cardPlus {
+    display: none;
+  }
+}
