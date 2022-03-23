@@ -1,0 +1,79 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 32px 10px 28px;
+}
+
+.headerLeft {
+  display: flex;
+}
+.logo {
+  margin-right: 57px;
+}
+
+.nav {
+  display: none;
+  font-size: 18px;
+  line-height: 150%;
+  color: #2b3541;
+}
+.nav li {
+  margin-right: 54px;
+}
+@media (min-width: 1024px) {
+  .nav {
+    display: flex;
+  }
+  .headerBurger {
+    display: none;
+  }
+}
+
+.instaItem {
+  margin-right: 20px;
+}
+
+.burgerNavActiv {
+  width: 100%;
+  height: 331px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #f3f3f3;
+  z-index: 2;
+  padding: 29px 10px 20px;
+}
+.hidden{
+	display: none;
+}
+.logoCloseWrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navActiv {
+  font-size: 16px;
+  line-height: 150%;
+  color: #2b3541;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+hr{
+	border-bottom: 1px solid #2B3541;
+	width: 100%;
+	opacity: 0.2;
+}
+.socialActiv {
+	display: flex;
+	justify-content: end;
+	padding-right: 20px;
+}
+@media (min-width: 1024px){
+  .logo {
+    margin-right: 92px;
+  }
+}

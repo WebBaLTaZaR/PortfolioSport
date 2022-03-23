@@ -1,0 +1,115 @@
+.footer {
+  background: #f3f3f3;
+}
+.footerWrap {
+  padding: 42px 10px 40px;
+}
+
+.footerLogo {
+  margin: 0 auto;
+  display: block;
+  width: 97px;
+}
+.footerNav {
+  margin: 41px 0 25px;
+  display: flex;
+  justify-content: space-between;
+}
+.footerNavItem {
+  display: block;
+}
+.footerSocial {
+  margin-bottom: 44px;
+  display: flex;
+  align-items: center;
+}
+.footerMail {
+  margin-right: 156px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 150%;
+  color: #2b3541;
+  z-index: 2;
+  position: relative;
+}
+.footerMail::before {
+  content: url(../img/emailRound.svg);
+  position: absolute;
+  top: -21px;
+  left: -32px;
+  z-index: -1;
+  display: block;
+}
+.footerInstagramm {
+  margin-right: 23px;
+}
+
+.allReserved {
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  color: #2b3541;
+  opacity: 0.3;
+  margin: 0 auto;
+  width: 154px;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .footerWrap {
+    padding: 56px 10px;
+  }
+  .footerWrapLogoNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footerLogo {
+    margin: 0;
+  }
+  .footerNav {
+    gap: 25px;
+  }
+  .footerSocial {
+    justify-content: end;
+  }
+  .footerMail {
+    margin-right: 33px;
+  }
+}
+
+
+
+@media (min-width: 1024px) {
+  .footerWrap {
+    padding: 48px 0 21px;
+  }
+  .footerWrapContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .footerLogo {
+    margin-right: 75px;
+  }
+  .footerNav {
+    margin: 0;
+    gap: 90px;
+  }
+  .footerNavItem {
+    font-size: 14px;
+  }
+  .footerSocial {
+    margin: 0;
+  }
+  .footerMail {
+    font-size: 16px;
+  }
+  .allReserved {
+    margin-top: 30px;
+    font-size: 14px;
+    width: 220px;
+  }
+}
